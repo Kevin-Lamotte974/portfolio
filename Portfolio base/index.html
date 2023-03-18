@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./contents/Profil.jpg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bg-star"></div>
+
+    <header class="navbar">
+        <div class="logo">
+            <img src="contents/KL_white.png" alt="">
+        </div>
+        <span class="button accueil"><i class="fa-solid fa-house fa-sm"></i>Accueil</span>
+        <span class="button apropos"><i class="fa-solid fa-address-card"></i>A propos</span>
+        <span class="button projets"><i class="fa-solid fa-briefcase"></i>Projets</span>
+        <span class="button contact"><i class="fa-solid fa-comment"></i>Contact</span>
+        <span class="droits">
+            <span>© 2023 c'est à moi.</span>
+        </span>
+    </header>
+
+    <main class="landing">
+        <section class="accueil in-landing current">
+            <div class="page">
+                <div class="details-center">
+                    <img id="main" src="contents/Profil.jpg" alt="Photo Kevin">
+                    <h1 id="name">Kevin LAMOTTE</h1>
+                    <div class="reseaux">
+                        <a style="color:aliceblue;" href="https://www.linkedin.com/in/kevin-lamotte974/" target="_blank">
+                            <i class="fa-brands fa-linkedin fa-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="apropos in-landing ">
+            <div class="page">
+                <div class="grid">
+                    <h1>À Propos</h1>
+                    <div class="details-start">
+                        <div class="info">
+                            <div class="selection">
+                                <button class="select i1">Présentation</button>
+                                <button class="select i2">Informations</button>
+                                <button class="select i3">CV</button>
+                            </div>
+                            <div class="contenu">
+                                <div class="contenu-details current-detail" id="i1">
+                                    <span>Je suis Kevin Lamotte, un développeur passionné. Au cours de ma vie, j'ai travaillé sur de nombreux projets passionnants qui seront prochainement présent sur mon portfolio.<br/><br/> Je suis toujours en quête de nouvelles opportunités pour développer mes connaissances et compétences. J'espère que mon portfolio vous donnera un aperçu de mon travail et de mes compétences. N'hésitez pas à me contacter si vous avez des questions ou si vous souhaitez en savoir plus sur moi.</span>
+                                    <img src="contents/Profil2.jpg" alt="">
+                                </div>
+                                <div class="contenu-details" id="i2">
+                                    <span>Date de naissance : 01 Oct 2001</span>
+                                    <span>T'auras compris à partir d'ici</span>
+                                </div>
+                                <div class="contenu-details" id="i3">
+                                    <iframe src="./contents/CV KEVIN LAMOTTE.pdf" frameborder="0"></iframe>
+                                    <button type="submit" onclick="window.open('./contents/CV KEVIN LAMOTTE.pdf')">Voir le CV</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+        <section class="projets in-landing">
+            <div class="page">
+                <div class="grid">
+                    <h1>Projets</h1>
+                    <div class="details-center">
+                        <div>Je n'ai pas de projet à mettre, sois indulgent&nbsp;<p id="job">a</p></div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact in-landing">
+            <div class="page">
+                <div class="grid">
+                    <h1>Projets</h1>
+                    <div class="details-center">
+                        <span>Kevin LAMOTTE</span>
+                        <span>Téléphone : 0613 60 84 18</span>
+                        <span>Email : kevinlamotte974@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/432fed9d5c.js" crossorigin="anonymous"></script>
+</body>
+</html>
