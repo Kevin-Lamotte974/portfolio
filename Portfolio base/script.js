@@ -40,7 +40,7 @@ let button = document.querySelectorAll('.button');
 button.forEach((b) => {
     b.addEventListener('click', () => {
         let beforeCurrent = document.querySelector('.current');
-        if(b.classList[1] !== beforeCurrent.classList[0]){
+        if(b.classList[1] !== beforeCurrent.classList[0] && b.classList[1] !== 'projets'){
             beforeCurrent.classList.remove('current')
             beforeCurrent.classList.add('last')
             let currentLanding = document.querySelector('.in-landing.'+b.classList[1])
@@ -113,3 +113,16 @@ setInterval(() => {
 //         job.classList.remove('hidden')
 //     }, 2500)
 }, 5000)
+
+//* Détermine l'âge
+
+let age = document.getElementById('age');
+let ageSpan = age.querySelector('span');
+
+let birthday = new Date(2001, 9, 1)
+console.log(new Date().getFullYear() - birthday.getFullYear());
+
+let determineAge = new Date().getFullYear() - birthday.getFullYear();
+new Date().getMonth() < birthday.getMonth() && determineAge--;
+
+ageSpan.innerText = determineAge;

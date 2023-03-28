@@ -88,6 +88,14 @@ body {
   overflow: hidden;
 }
 
+.navbar .button:nth-child(4) {
+  color: chocolate;
+}
+
+.navbar .button:nth-child(4)::after {
+  background-color: rgba(210, 105, 30, 0.50);
+}
+
 .navbar .button:hover {
   cursor: pointer;
 }
@@ -103,7 +111,7 @@ body {
 }
 
 .navbar .button:hover::after {
-  transform: translateX(200px) skewX(25deg);
+  transform: translateX(15rem) skewX(25deg);
 }
 
 .navbar .button i {
@@ -166,11 +174,12 @@ body {
 }
 
 .page #main {
-  width: 200px;
-  height: 200px;
+  width: 20rem;
+  height: 20rem;
   border: 10px solid #000e3862;
-  border-radius: 50%;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   box-shadow: 0 0 20px rgb(48, 46, 77);
+  animation: circleshape 8s infinite;
 }
 
 .logo {
@@ -213,7 +222,28 @@ body {
   left: 0;
   margin-top: clamp(1rem, 1.5rem + 1vw , 3.5rem);
   transform: skewX(-45deg);
-} 
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.circle img {
+  width: 30px;
+  height: 30px;
+}
+
+.tech {
+  display: flex;
+  margin-bottom: 75px;
+}
 
 #jobsentence {
   position: relative;
@@ -274,12 +304,16 @@ body {
   flex-direction: row;
   width: 100%;
   height: 90%;
-  margin-top: 25px;
+  /* margin-top: 25px; */
   padding: 25px;
 }
 
-.details-start span {
+/* .details-start span {
   width: 50%;
+} */
+
+.reseaux {
+  margin-top: 20px;
 }
 
 
@@ -312,7 +346,7 @@ button {
 
 .contenu {
   width: 100%;
-  height: 90%;
+  height: 100%;
 }
 
 .contenu-details {
@@ -334,22 +368,73 @@ button {
   justify-content: space-between;
 }
 
-#i1 img {
+/* #i1 img {
   width: clamp(200px, 4vw, 45vw);
   height: clamp(400px, 8vw, 90vw);
   margin-right: 100px;
+} */
+
+:is(#i1, #i2) .grid {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
 }
 
 iframe {
-  width: 40%;
+  width: 90%;
   height: 70%;
 }
 
-#i3 {
+#cv {
+  width: 50%;
   display: flex;
   /* justify-content: center; */
   align-items: center;
   flex-direction: column;
+}
+
+.selection {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+}
+
+#i2 {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 60%;
+  margin-top: 40px;
+}
+
+.perso {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.info2 {
+  width: 50%;
+}
+
+.info2 a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.info2 p {
+  border-bottom: 1px solid #e8dfec;
+  font-weight: 700;
+  padding: 10px 0;
+  font-size: 16px;
+  margin: 10px;
+}
+
+.info2 p span {
+  font-weight: 300;
+  margin-top: 4px;
+  display: inline-block;
 }
 
 @keyframes tail {
@@ -418,5 +503,18 @@ iframe {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes circleshape {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 80% 40%;
+  }
+  50% {
+      border-radius: 30% 80% 70% 40%/50% 60% 30% 60%;
+  }
+
+  100% {
+      border-radius: 60% 40% 30% 70%/60% 30% 80% 40%;
   }
 }

@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./contents/Profil.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="./contents/Profil4.jpg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kevin LAMOTTE </title>
 </head>
 <body>
     <div class="bg-star"></div>
@@ -28,8 +28,9 @@
         <section class="accueil in-landing current">
             <div class="page">
                 <div class="details-center">
-                    <img id="main" src="contents/Profil.jpg" alt="Photo Kevin">
+                    <img id="main" src="contents/Profil4.jpg" alt="Photo Kevin">
                     <h1 id="name">Kevin LAMOTTE</h1>
+                    <h4>Un passionné de Développement Front-End</h4>
                     <div class="reseaux">
                         <a style="color:aliceblue;" href="https://www.linkedin.com/in/kevin-lamotte974/" target="_blank">
                             <i class="fa-brands fa-linkedin fa-xl"></i>
@@ -40,27 +41,61 @@
         </section>
         <section class="apropos in-landing ">
             <div class="page">
-                <div class="grid">
+                <div class="grid ">
                     <h1>À Propos</h1>
+                    <div class="selection">
+                        <button class="select i1">Présentation</button>
+                        <button class="select i2">Informations</button>
+                        <!-- <button class="select i3">CV</button> -->
+                    </div>
                     <div class="details-start">
                         <div class="info">
-                            <div class="selection">
-                                <button class="select i1">Présentation</button>
-                                <button class="select i2">Informations</button>
-                                <button class="select i3">CV</button>
-                            </div>
                             <div class="contenu">
                                 <div class="contenu-details current-detail" id="i1">
-                                    <span>Je suis Kevin Lamotte, un développeur passionné. Au cours de ma vie, j'ai travaillé sur de nombreux projets passionnants qui seront prochainement présent sur mon portfolio.<br/><br/> Je suis toujours en quête de nouvelles opportunités pour développer mes connaissances et compétences. J'espère que mon portfolio vous donnera un aperçu de mon travail et de mes compétences. N'hésitez pas à me contacter si vous avez des questions ou si vous souhaitez en savoir plus sur moi.</span>
-                                    <img src="contents/Profil2.jpg" alt="">
+                                    <div class="grid">
+                                        <span>Je suis Kevin Lamotte, un développeur passionné. Je suis toujours en quête de nouvelles opportunités pour développer mes connaissances et compétences. J'espère que mon portfolio vous donnera un aperçu de mon travail et de mes compétences. N'hésitez pas à me contacter si vous avez des questions ou si vous souhaitez en savoir plus sur moi.</span>
+                                        <!-- <img src="contents/Profil2.jpg" alt=""> -->
+                                        <div class="tech">
+                                            <div class="circle">
+                                                <img src="./contents/html.svg" alt="">
+                                            </div>
+                                            <div class="circle">
+                                                <img src="./contents/css.svg" alt="">
+                                            </div>
+                                            <div class="circle">
+                                                <img src="./contents/js.svg" alt="">
+                                            </div>
+                                            <div class="circle">
+                                                <img src="./contents/reactjs.svg" alt="">
+                                            </div>
+                                            <div class="circle">
+                                                <img src="./contents/tailwindcss.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="cv">
+                                        <iframe src="./contents/CV KEVIN LAMOTTE.pdf" frameborder="0"></iframe>
+                                        <button type="submit" onclick="window.open('./contents/CV KEVIN LAMOTTE.pdf')">Voir le CV</button> 
+                                    </div>
                                 </div>
                                 <div class="contenu-details" id="i2">
-                                    <span>Date de naissance : 01 Oct 2001</span>
-                                    <span>T'auras compris à partir d'ici</span>
-                                </div>
-                                <div class="contenu-details" id="i3">
-                                    <iframe src="./contents/CV KEVIN LAMOTTE.pdf" frameborder="0"></iframe>
-                                    <button type="submit" onclick="window.open('./contents/CV KEVIN LAMOTTE.pdf')">Voir le CV</button> 
+                                    <div class="perso">
+                                        <div class="info2">
+                                            <p>Date de naissance : <br><span>01 Oct 2001</span></p>
+                                        </div>
+                                        <div class="info2">
+                                            <p id="age">Âge : <br><span></span></p>
+                                        </div>
+                                        <div class="info2">
+                                            <p>Email : <br><span><a href="mailto:kevinlamotte974@gmail.com">kevinlamotte974@gmail.com</a></span></p>
+                                        </div>
+                                        <div class="info2">
+                                            <p>Téléphone : <br><span><a href="tel:+33613608418">+33 6 13 60 84 18</a></span></p>
+                                        </div>
+                                        <div class="info2">
+                                            <p>Localisation : <br><span><a href="https://www.google.com/maps/place/92800+Puteaux/">Puteaux, Hauts-de-Seine 92</a></span></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -82,7 +117,7 @@
         <section class="contact in-landing">
             <div class="page">
                 <div class="grid">
-                    <h1>Projets</h1>
+                    <h1>Contact</h1>
                     <div class="details-center">
                         <span>Kevin LAMOTTE</span>
                         <span>Téléphone : 0613 60 84 18</span>
